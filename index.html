@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>barber shop</title>
+    <link type="text/css"rel="stylesheet"href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <section id="banner">
+<img class="logo" src="photo/logo.png">
+<div class="banner-text">
+    <h1>hair studio</h1>
+    <p>style your hair is style your life</p>
+    <div class="banner-btn">
+        <a href="#"><span></span> Finde out</a> </a>
+        <a href="#"><span></span> Read more</a>
+    </div>
+</div>
+    </section>
+    <div ID="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#feature">FEATURES</a></li>
+                <li><a href="#service">SERVISCES</a></li>
+                <li><a href="#testimonial">MEET US</a></li>
+                <li><a href="#footer">footer</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="photo/menu.png" id="menu">
+    </div>
+ <!--features-->
+ <section id="feature">
+    <div class="title-text">
+        <p>FEATURES</p>
+        <h1>WHY CHOSE US?</h1>
+    </div>
+    <div class="feature-box">
+        <div class="features">
+            <h1>Experienced staff</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti dolores debitis quaerat cupiditate possimus. Porro hic nisi accusantium amet pariatur!</p>
+        </div>
+        <div class="features-img">
+            <img src="photo/download.png">
+        </div>
+    </div>
+ </section>
+<!--servis-->
+<section id="service">
+    <div class="title-text">
+        <p>SERVICES</p>
+        <h1>WE PROVIED BETTER</h1>
+    </div>
+    <div class="service-box">
+        <div class="single-service">
+            <img src="photo/p1.png">
+        <div class="overlay">
+        </div>
+        <div class="servic-des">
+            <h1>hair styling</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        </div>
+        <div class="single-service">
+            <img src="photo/p2.png">
+            <div class="overlay">
+
+            </div>
+            <div class="servic-des">
+                <h1>hair styling</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="photo/p3.png">
+            <div class="overlay">
+
+            </div>
+            <div class="servic-des">
+                <h1>hair styling</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="single-service">
+            <img src="photo/p4.png">
+            <div class="overlay">
+
+            </div>
+            <div class="servic-des">
+                <h1>hair styling</h1>
+                <hr>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--testemonial-->
+<section id="testimonial">
+    <div class="title-text">
+        <p>TESTIMONIAL</p>
+        <h1>OUR CLINET SAY</h1>
+    </div>
+    <div class="testimonial-row">
+        
+        <div class="testimonial-col"> <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, quis quae? Assumenda?</p>
+            <div class="user">
+                <img src="photo/m1.png" >
+                <div class="user-info">
+                    <h4>john</h4>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-col"> <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi doloremque dicta itaque?</p>
+        <div class="user">
+            <img src="photo/m2.png">
+            <div class="user-info">
+                <h4>alex</h4>
+            </div>
+        </div>
+        </div>
+        <div class="testimonial-col"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus repudiandae accusantium deserunt.</p>
+       <div class="user">
+        <img src="photo/m3.png" >
+        <div class="user-info">
+            <h4>daniel</h4>
+        </div>
+       </div>
+        </div>
+        
+    </div>
+</section>
+<!--footer-->
+<section id="footer">
+    <div class="title-text">
+        <p>CONTACT US</p>
+        <h1>VISIT SHOP TODAY</h1>
+    </div>
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>opening hours</h1>
+            <p>monday to friday - 9am to 6pm</p>
+            <p>saturday to friday - 9am to 11pm</p>
+        </div>
+        <div class="footer-right">
+            <h1>get in touch</h1>
+            <p>#36,via roma, milan</p>
+            <p>barberacademy@gmail.com</p>
+            <p>+8182475894</p>
+        </div>
+    </div>
+</section>
+
+<script>
+var menubtn= document.getElementById("menubtn")
+var menu= document.getElementById("menu")
+var sidenav= document.getElementById("sidenav")
+sidenav.style.right="-200px"
+menubtn.onclick= function() {
+    if(sidenav.style.right=="-200px"){
+        sidenav.style.right="0"
+        menu.src="photo/close.png";
+    }
+    else{
+        sidenav.style.right="-200px"
+        menu.src="photo/menu.png"
+    }
+}
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+</script>
+</body>
+</html>
